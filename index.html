@@ -1,0 +1,118 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Matchblocs - A Block Color Match Tool. A mincraft color picker that matches a color in RGB to minecraft blocks. Gets minecraft blocks that match a given color. "/>
+    <title>MatchBlocs</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="left"></div>
+
+    <div class="everything">
+
+        <div class="header">
+
+            
+
+                <div class="colorPickerClass">
+
+                    <input id="colorPicker"  type="color">
+                    
+
+                </div>
+                <div class="redLabel">
+
+                    Red:
+
+                </div>
+                <div id="redNumberLabel" class="redNumberLabel">
+
+                    0
+
+                </div>
+                <div class="greenLabel">
+
+                    Green:
+
+                </div>
+                <div id="greenNumberLabel" class="greenNumberLabel">
+
+                    0
+
+                </div>
+                <div class="blueLabel">
+
+                    Blue:
+
+                </div>
+                <div id="blueNumberLabel" class="blueNumberLabel">
+                
+                    0
+                
+                </div>
+                
+
+
+
+
+          
+            
+
+                <div class="alphaFilterLabel">
+
+                    Alpha Filter:
+
+                </div>
+                <div class="alphaFilter">
+
+                    <input id="alphaFilter" type="number" onchange="displayByRGB()" value="1.0" max="1" min="0" step=".01">
+
+                </div>
+                <div class="blocksDisplayedLabel">
+
+                    Blocks Displayed:
+
+                </div>
+                <div class="blocksDisplayed">
+
+                    <input id="blocksDisplayed" type="number" onchange="displayByRGB()" value="16" max="100" min="1" step="1">
+
+                </div>
+                <div class="versionLabel">
+
+                    Updated to version 1.17-rc2
+
+                </div>
+
+
+
+
+           
+
+        </div>
+        <div id="blocksGrid" class="blocksGrid">
+           
+
+
+
+        </div>
+    </div>
+
+    <div class="right"></div>
+</div>
+  
+
+   
+
+
+<script src="main.js"> </script>
+</body>
+</html>

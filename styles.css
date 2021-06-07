@@ -1,0 +1,89 @@
+/*sets font*/
+@font-face {
+  font-family: 'Minecraft';
+  src: url("minecraft.otf") format('opentype');
+}
+
+
+/*left, everything, and right. Basically handles entire page*/
+.container{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+
+/*handles header and block grid*/
+.everything{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+
+/*ad space*/
+.left{
+  overflow-wrap: break-word;
+}
+.right{
+  overflow-wrap: break-word;
+}
+
+
+/*header*/
+.header{
+  display: inline-flex;
+}
+.header > div{
+  margin-right: 3%;
+  font-family: Minecraft;
+}
+
+
+/*blocks*/
+.blocksGrid {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+.blocksGrid > div{
+  height: 225px;
+  image-rendering: pixelated;
+    
+}
+
+
+/* Tooltip for blocks*/
+.blocksGrid > div > .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(255, 255, 255, 0.493);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Minecraft;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when mouse is over the block */
+.blocksGrid > div:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+/*handle spinboxes/number inputs*/
+input[type="number"]
+{
+    font-size: 12pt;
+    font-family: Minecraft;
+    border: transparent; 
+}
+
+
+/*makes it so alpha filter and bloccks displayed labels dont break into multiple rows*/
+.alphaFilterLabel{
+ flex-shrink: 0;
+}
+.blocksDisplayedLabel{
+  flex-shrink: 0;
+}
