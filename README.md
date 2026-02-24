@@ -8,3 +8,12 @@ Matchblocs - Website version of MatchBlocks, A Block Color Match Tool. A mincraf
 ![Screenshot 2023-05-24 165133](https://github.com/george0815/MatchBlocs.github.io/assets/20736715/a46ec374-5573-4f00-85f5-78076cb4c89c)
 ![Screenshot 2023-05-24 165148](https://github.com/george0815/MatchBlocs.github.io/assets/20736715/8bcfe81b-a77b-4354-b73a-ed9b932abfa3)
 ![Screenshot 2023-05-24 165205](https://github.com/george0815/MatchBlocs.github.io/assets/20736715/1eb83c7b-c094-4dca-82f2-5861338fe566)
+
+
+
+### COPYRIGHT
+
+Copyright (C) 2019-2026 George Hunter Shipman
+
+This project is licensed under the GNU General Public License v3.0.
+See the LICENSE file for details.
